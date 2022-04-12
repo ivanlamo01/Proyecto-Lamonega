@@ -1,7 +1,6 @@
 {
-  "name": "prueba",
+  "name": "proyectofinal",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +16,15 @@
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
     "path": "^0.12.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanlamo01/proyectofinal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ivanlamo01/proyectofinal/issues"
+  },
+  "homepage": "https://github.com/ivanlamo01/proyectofinal#readme",
+  "description": ""
 }
