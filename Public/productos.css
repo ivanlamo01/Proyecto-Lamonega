@@ -1,0 +1,30 @@
+.productos{
+    background-image: url(../multimedia/blue-3d-background-vector-images.jpg);
+    font-family: 'open sans';
+}
+
+.productos h2{
+    display: flex;
+    justify-content: center;
+    color: #ececec
+}
+
+.productos h3{
+    display: flex;
+    justify-content: center;
+    color: #ececec;
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+}
+
+#mytable{
+    width: 1200px;
+    padding: 2rem;
+    background: white;
+}
+
+@media only screen and (min-width: 600px) {
+    #mytable{margin-left:6rem}}
