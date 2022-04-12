@@ -1,11 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const Port = 8080;
 const path = require('path');
 const hbs = require('hbs');
 //Traemos la librería para la conexión
 const mysql = require('mysql2');
-
+const PORT = process.env.PORT
 //Creamos la configuración de la conexión
 const conexion =  mysql.createConnection({
     host: "localhost",
@@ -75,6 +75,7 @@ app.get('/productos', (req, res) =>{
     })
 });
 
+
 app.post('/contacto', (req, res) =>{
     //Desestructuración de las variables
     const { nombre, apellido,email,telefono} = req.body;
@@ -92,8 +93,8 @@ app.post('/contacto', (req, res) =>{
 
 //conexion.end();
 
-app.listen(Port, () =>{
-    console.log(`Servidor está trabajando en el Puerto ${Port}`);
+app.listen(PORT, () =>{
+    console.log(`Servidor está trabajando en el Puerto ${PORT}`);
 });
 
 app.on('error', (err) =>{
