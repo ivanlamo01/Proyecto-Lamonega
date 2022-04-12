@@ -13,6 +13,7 @@ const conexion =  mysql.createConnection({
     user: "root",
     password: "chivolandia1",
     database: "3dp",
+    socketPath: '/var/run/mysqld/mysqld.sock'
 });
 
 //Conectamos a la DB
