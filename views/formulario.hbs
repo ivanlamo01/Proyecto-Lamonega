@@ -1,0 +1,99 @@
+<div class="form-princ">
+<div class="contenedor">
+    <img class="imagen" src="../multimedia/MYVGQ5I3TRBVLH2XCMGF5QA5AQ.jpg"/>
+    <div class="black">
+        <img src="../multimedia/2416004.webp" alt="">
+
+    </div>
+</div>
+
+        <div class="centrado"><b>Comenza tu proyecto</b></div>
+        <div class="centrado-small">Imprimimos todas tus ideas en 3D</div>
+<div class="form">
+<div class="division">
+    <p>Ponte en <b>contacto</b> con nosotros, envianos tu <b>diseño</b> y en la brevedad lo presupuestamos y te responderemos</p>
+</div>
+
+
+    
+    <form class="row g-3" action="./formulario" method="post">
+    
+    <h3 class="titulo-form">Empeza tu proyecto</h3>
+    
+    <div class="col-md-6">
+    <label for="inputName" class="form-label">Nombre</label>
+    <input type="text" class="form-control" name="nombre" id="inputname" placeholder="Ingrese su nombre completo" required>
+    </div>
+    
+    <div class="col-md-6">
+    <label for="inputLastName" class="form-label">Apellido</label>
+    <input type="text" class="form-control" name="apellido" id="inputLastName" placeholder="Ingrese su apellido" required>
+    </div>
+    
+    <div class="col-md-12">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email"  name="email" class="form-control" id="inputEmail4" placeholder="Ingrese su Mail" required>
+    </div>
+    
+    <div class="col-12">
+    <label for="inputPhone" class="form-label">Telefono</label>
+    <input type="phone" name="telefono" class="form-control" id="inputPhone" placeholder="Ingrese su telefono o celular" required>
+    </div>
+    
+    <div class="tipo-cliente">
+    <label for="tipo" >Tipo de cliente :</label>
+    <input type="radio" name="empresa"  id="empresa"> Empresa
+    <input type="radio" name="estudiante"  id="estudiante"> Estudiante
+    <input type="radio" name="particular"  id="particular"> Particular
+    </div>
+
+    <div class="col-12">
+    <label for="inputEmpresa" class="form-label">Empresa</label>
+    <input type="text" class="form-control" name="empresa" id="inputempresa" placeholder="Ingrese el nombre de su empresa" required>
+    </div>
+
+    <div class="col-12">
+    <label for="inputEmpresa" class="form-label">Institucion educativa</label>
+    <input type="text" class="form-control" name="insteducativa" id="inputestudiante" placeholder="Ingrese el nombre de su institucion" required>
+    </div>
+
+    <div class="col-md-12">
+    <label for="descricion" class="form-label">Descripcion del proyecto</label>
+    <textarea class="form-control" name="descripcion" id="descripcion" rows="3" required></textarea>
+    </div>
+
+    <div class="col-md-12">
+    <label for="formFile" class="form-label">Adjunte algun archivo de su diseño</label>
+    <input class="form-control" type="file" id="formFile" name="archivo">
+    </div>
+
+    <div class="col-md-12">
+    <button type="submit" class="btn btn-primary">Enviar proyecto</button>
+    </div>
+    </form>
+    
+
+
+    <script>
+        var empInput = document.getElementById('inputempresa');
+        var estInput = document.getElementById('inputestudiante');
+        // evento para el input radio del "si"
+        document.getElementById('empresa').addEventListener('click', function(e) {
+        empInput.disabled = false;
+        estInput.disabled= true;
+        });
+
+        // evento para el input radio del "no"
+        document.getElementById('particular').addEventListener('click', function(e) {
+            empInput.disabled = true;
+            estInput.disabled= true;
+        });
+
+        document.getElementById('estudiante').addEventListener('click', function(e) {
+            empInput.disabled = true;
+            estInput.disabled= false;
+        });
+    </script>
+</div>
+</div>
+

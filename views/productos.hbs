@@ -1,0 +1,29 @@
+
+<div class="productos">
+    <h2>Productos disponibles para la venta</h2>
+        <div class="tabla">
+            <table class="table table-striped" id="mytable">
+                <thead>
+                    <tr>
+                        <th> Producto ID</th>
+                        <th> Nombre </th>
+                        <th> Tipo </th>
+                        <th> Precio </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {{#each results}}
+                    <tr>
+                        <td> {{idProducto}} </td>
+                        <td> {{nombreProducto}} </td>
+                        <td> {{tipo}} </td>
+                        <td> {{precio}} </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+
+    <h3>Contactanos para obtener mas informacion de los productos y medios de pago</h3>
+</div>
