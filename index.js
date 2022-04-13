@@ -5,6 +5,23 @@ const path = require('path');
 const hbs = require('hbs');
 const PORT = process.env.PORT
 
+/*//Traemos la librería para la conexión
+const mysql = require('mysql2');
+//Creamos la configuración de la conexión
+
+const conexion =  mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: process.env.user,
+    password: process.env.pass,
+    database: process.env.db,
+});
+//Conectamos a la DB
+conexion.connect((error) =>{
+    if(error) throw error;
+    console.log('Conexión a la Data Base exitosa!!');
+});*/
+
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
@@ -17,7 +34,7 @@ app.set('views', path.join(__dirname, 'views'));
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.get('/', (req, res) =>{
-    res.render('index', {titulo: 'Bienvenidos a la App'})
+    res.render('index')
 });
 
 app.get('/formulario', (req, res) =>{
