@@ -8,7 +8,7 @@ const PORT = process.env.PORT
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
-app.use('/public',express.static('public'));
+app.use('/public',express.static('Public'));
 app.use('/multimedia',express.static('multimedia'));
 
 //Configuramos el Motor de Plantillas
