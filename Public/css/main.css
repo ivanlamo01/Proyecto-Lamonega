@@ -5,6 +5,10 @@
     padding: 1rem;
 }
 
+.main{
+    background-image: url(../../multimedia/blue-3d-background-vector-images.jpg);
+}
+
 .carousel-item{
     transition: transform 2s ease, opacity .5s ease-out;
 }
@@ -29,9 +33,7 @@
     padding: 5rem;
 }
 
-.main{
-    background-image: url(../multimedia/blue-3d-background-vector-images.jpg);
-}
+
 
 #text-car{
     color: white;

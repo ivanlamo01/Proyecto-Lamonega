@@ -5,20 +5,11 @@ const path = require('path');
 const hbs = require('hbs');
 const PORT = process.env.PORT
 
-const setHeadersOnStatic = (res, path, stat) => {
-    const type = mime.getType(path);
-    res.set('content-type', type);
-  }
-  
-  const staticOptions = {
-    setHeaders: setHeadersOnStatic
-  }
-
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-app.use('/multimedia',express.static('multimedia'))
-app.use(express.static(path.join(__dirname, 'public'), staticOptions));
 
+app.use('/public',express.static('public'));
+app.use('/multimedia',express.static('multimedia')),
 
 //Configuramos el Motor de Plantillas
 app.set('view engine', 'hbs');
