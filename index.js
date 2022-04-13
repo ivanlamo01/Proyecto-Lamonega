@@ -9,9 +9,15 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 app.use('/public',express.static('public'));
-app.use('/public/css',express.static('css'));
-app.use('/multimedia',express.static('multimedia'))
 
+var publicPath = path.resolve(__dirname, 'public'); //path.join(__dirname, 'public'); también puede ser una opción
+app.use(express.static(publicPath));
+
+
+app.use('/multimedia',express.static('multimedia'))
+app.get('/', function(req, res){
+    res.sendfile(__dirname + '/public');
+    });
 //Configuramos el Motor de Plantillas
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
