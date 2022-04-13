@@ -40,12 +40,27 @@
     <input type="phone" name="telefono" class="form-control" id="inputPhone" placeholder="Ingrese su telefono o celular" required>
     </div>
     
-    <div class="tipo-cliente">
-    <label for="tipo" >Tipo de cliente :</label>
-    <input type="radio" name="empresa"  id="empresa"> Empresa
-    <input type="radio" name="estudiante"  id="estudiante"> Estudiante
-    <input type="radio" name="particular"  id="particular"> Particular
+    <label for="">Tipo de cliente</label>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="empresa"  id="empresa"  value="option1" checked >
+    <label class="form-check-label" for="exampleRadios1">
+        Empresa
+    </label>
     </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="estudiante"  id="estudiante" value="option2">
+    <label class="form-check-label" for="exampleRadios2">
+    Estudiante
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="particular"  id="particular" value="option3">
+    <label class="form-check-label" for="exampleRadios3">
+    Particular
+    </label>
+    </div>
+
+
 
     <div class="col-12">
     <label for="inputEmpresa" class="form-label">Empresa</label>
