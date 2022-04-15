@@ -1,5 +1,5 @@
 #carouselExampleDark{
-    height: 700px;
+    height: 100%;
     margin-left: 0;
     width: 100%;
     padding: 1rem;
@@ -15,7 +15,7 @@
 
 .img img{
     width: 100%;
-    height: 700px;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -31,15 +31,19 @@
 
 .info{
     padding: 5rem;
+    color: white;
+    font-family: "open sans";
 }
-
-
 
 #text-car{
     color: white;
     z-index: 2000;
+
 }
 
-.info{
-    color: white;
+@media only screen and (max-width: 600px){
+    #text-car{
+        font-size: 0.75rem;
+    }
+
 }

@@ -22,6 +22,7 @@ conexion.connect((error) =>{
     console.log('Conexión a la Data Base exitosa!!');
 });*/
 
+
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
