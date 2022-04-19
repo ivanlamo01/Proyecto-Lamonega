@@ -12,11 +12,17 @@
     width: 40%;
     background-color: #ececec;
     padding: 2rem;
+    margin-top: 1rem;
 }
 
 
 .nos{
     color: #ececec;
+}
+
+.titulo-form{
+    font-family: "open sans";
+    font-size: x-large;
 }
 
 
@@ -26,11 +32,13 @@
     }
 
     .cont form{
-        width: 100%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .cont iframe{
-        width: 100%
+        width: 100%;
     }
 }
 
@@ -42,7 +50,9 @@
     }
 
     .cont form{
-        width: 100%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .cont iframe{
